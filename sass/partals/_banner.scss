@@ -1,0 +1,173 @@
+section.banner{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+ 
+    .left{
+        flex:1;
+        padding: 20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+         order:2;
+        flex:1;
+            h1{
+                font-size:3rem;
+                font-weight:700;
+            }
+            p{
+                font-size:1.2rem;
+                color:#999;
+            }
+
+            .btn{
+                display:block;
+                padding:15px 40px;
+                background: linear-gradient(to left, #2bb7da,#31d35c);
+                color:#FFF;
+                font-size:1.4rem;
+                font-weight: 700; 
+                border-radius:20px;
+            }
+        }
+  
+    .right{
+        background:url('../../assets/image/bg-intro-mobile.svg') no-repeat;
+        background-position: top right; 
+        background-size: cover;
+        order:1;
+            img{
+                width:100%;
+            }
+    }
+}
+
+@media screen and (min-width:740px){
+    main{
+        width: 100%; 
+        max-width: 1740px;
+        margin:0 auto;
+        background:url('../../assets/image/bg-intro-desktop.svg') no-repeat;
+        background-position-x: 430px;
+        background-position-y: -225px;
+        overflow:hidden;
+    }
+    section.banner{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+         
+        .left{
+            flex:1;
+            padding: 20px;
+            display:flex;
+            justify-content: flex-start;
+            text-align: left;
+            order:1;
+            
+            .cont{
+                height: 70%;
+            }
+                 h1{
+                    font-size:5rem;
+                    font-weight:400;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size:1.7rem;
+                    color:#999;
+                    width:430px;
+                    margin-bottom: 30px;
+                }
+    
+                .btn{
+                    display:block;
+                    padding:15px 40px;
+                    background: linear-gradient(to left, #2bb7da,#31d35c);
+                    font-size:1.4rem;
+                    width: 200px;
+                    text-align:center;
+                }
+            }
+      
+        .right{
+            background: none; 
+            order:2;
+            flex:1;
+                img{
+                    width:500px;
+                }
+        }
+    }    
+
+}
+
+@media screen and (min-width:1440px){
+    main{
+        width: 100%; 
+        max-width: 1740px;
+        margin:0 auto;
+        background:url('../../assets/image/bg-intro-desktop.svg') no-repeat;
+        background-position-x: 730px;
+        background-position-y: -225px;
+        overflow:hidden;
+    }
+    .container{
+        max-width:1250px; 
+    }
+
+    .a{
+        background: red;
+    }
+    section.banner{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+         
+        .left{
+            flex:1;
+            padding: 20px;
+            display:flex;
+            justify-content: flex-start;
+            text-align: left;
+            order:1;
+            
+            .cont{
+                height: 70%;
+            }
+                 h1{
+                    font-size:5rem;
+                    font-weight:400;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size:1.7rem;
+                    color:#999;
+                    width:430px;
+                    margin-bottom: 30px;
+                }
+    
+                .btn{
+                    display:block;
+                    padding:15px 40px;
+                    background: linear-gradient(to left, #2bb7da,#31d35c);
+                    font-size:1.4rem;
+                    width: 200px;
+                    text-align:center;
+                }
+            }
+      
+        .right{
+            background: none; 
+            order:2;
+            flex:1;
+                img{
+                    width:900px;
+                    position:relative;
+                    top:-250px;
+                }
+        }
+    }
+}

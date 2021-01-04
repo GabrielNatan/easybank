@@ -1,0 +1,16 @@
+{
+  "name": "02-bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass sass/ -o dist/css/ -w"
+  },
+  "keywords": [],
+  "author": "Gabriel Natan",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

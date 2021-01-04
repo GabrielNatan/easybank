@@ -1,0 +1,99 @@
+.navbar{
+    height:70px;
+    padding:10px;
+    position:relative;
+    display:flex;
+    .logo{
+        flex:1;
+        display: flex;
+        align-items: center;
+    }
+    .buttons{
+        flex:1;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            display:none;
+        }
+        .bars{
+            border:none;
+            padding:10px;
+            background: transparent;
+        }
+    }
+    nav{
+        width: 90% ;  
+        padding:20px;
+        margin: 90px 3%;
+        background: #FFF;
+        border-radius: 5px;
+        position:absolute;
+        display:flex;
+        justify-content: center;
+        height: 0;
+        visibility: hidden;
+            ul{
+                font-size:1.8rem;
+                width:100%;
+                li{
+                    padding:7px;
+                    width:100%;
+                    text-align: center;
+                }
+            }
+            &.active{
+                height: auto; 
+                visibility: initial;
+            }
+    }
+
+}
+
+
+
+@media screen and (min-width:740px){
+    header{
+        background: #FFF;
+
+    }
+    .navbar{
+        nav{
+            position:initial;
+            height: auto;
+            visibility: initial;
+            flex:1;
+            margin:0;
+            padding:0;
+            background: transparent;
+                ul{
+                    display:flex;
+                    align-items: center;
+                    li{
+                        margin:0;
+                        height: 100%;
+                        display:flex;
+                        align-items: center;
+                        border-bottom:5px solid transparent;
+                        border-top:5px solid transparent;
+                    } 
+                }
+
+        }
+
+        .buttons{
+            .bars{
+                display:none;
+            }
+            .btn{
+                display:block;
+                padding:10px 20px;
+                background: linear-gradient(to left, #2bb7da,#31d35c);
+                color:#FFF;
+                font-size:1.4rem;
+                font-weight: 700; 
+                border-radius:20px;
+            }
+        }
+    }
+}
